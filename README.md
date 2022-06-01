@@ -7,6 +7,10 @@ python+selenium，虽不优雅，但省时有效
 choose_one(题号,[概率1,概率2,...])
 choose_multiple(题号,[概率1,概率2,...],最多选项限制（可选参数）)
 ```
+首先安装依赖
+```
+pip install -r requirements.txt
+```
 
 chromedriver记得替换成自己系统的版本，并在以下句子中更改路径
 

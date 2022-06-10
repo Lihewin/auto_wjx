@@ -5,8 +5,8 @@
 - 不会真有人，连问卷星都要弄虚作假吧。
 - 形式主义既然是形式，那就试着形式地自动化。
 - 我相信会用自动化的宝贝们，没人会在真正重要的作业上搞自动化吧。
-- 仅支持多选题，单选题，以不放回的方式随机选择
-- python + selenium，虽不优雅，但省时有效
+- 仅支持多选题，单选题，以不放回的方式随机选择。
+- python + selenium，虽不优雅，但省时有效。
 - ~~954-ivory 的回复：帮女票弄的，顺手给你改了些东西，现在应该优雅了点。~~
 
 ### 教程 - Tutorial
@@ -39,6 +39,8 @@ pip install -r requirements.txt
 
 ```python
 # wjx.py 
+
+# 其他 Driver 请参考 Selenium 文档自行修改。
 
 driver = webdriver.Chrome(options=opt)  # Windows下，将对应版本的 chromedriver 放置在 python 根目录，默认启用该行。
 

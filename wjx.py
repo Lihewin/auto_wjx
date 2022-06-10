@@ -98,7 +98,7 @@ def slider_move(loop_index, dest=380):
         ActionChains(driver).move_by_offset(xoffset=dest, yoffset=0).perform()
         ActionChains(driver).release().perform()
     except (TimeoutException, ElementClickInterceptedException):
-        logging.error(f"第{loop_index}次请求执行失败！")
+        logging.error(f"第 {loop_index} 次请求执行失败！")
 
 
 def main():
@@ -135,7 +135,7 @@ if __name__ == '__main__':
     opt.add_experimental_option('excludeSwitches', ['enable-automation'])
     opt.add_experimental_option('useAutomationExtension', False)
     # driver = webdriver.Chrome(executable_path=r'./chromedriver', options=opt)
-    # 库主估计是 Linux 党，鉴于大多数学生党使用 Windows，为了降低使用门槛，注释了该行。
+    # 库主估计是 Linux 党，鉴于大多数非计算计的同学使用 Windows，为了降低使用门槛，注释了该行。
     driver = webdriver.Chrome(options=opt)  # Windows下，将对应版本的 chromedriver 放置在 python 根目录，默认启用该行。
     driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument',
                            {'source': 'Object.defineProperty(navigator, "webdriver", {get: () => undefined})'})

@@ -81,7 +81,7 @@ choose_multiple(题号, [概率1, 概率2, ...], 最多选项限制（可选参�
 3. 利用 `cmd` 执行项目脚本
 
 ```shell
-cd /path/to/auto_wjx # 这里的 /path/to/auto_wjx 替换成你本机的文件夹路径
+cd /path/to/auto_wjx # 这里的 /path/to/auto_wjx 替换成你本机的文件夹路径。
 python wjx.py
 ```
 
